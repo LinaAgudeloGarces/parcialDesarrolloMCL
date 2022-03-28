@@ -1,0 +1,455 @@
+* {
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+  }
+
+header {
+    align-items: center;
+    background: rgb(59,2,133);
+    background: linear-gradient(180deg, rgba(59,2,133,1) 0%, rgba(105,7,233,1) 100%);
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 50px;
+    padding-right: 100px;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+a {
+    text-decoration: none;
+    color: aliceblue;
+}
+
+.header-grid {
+    display: grid;
+    grid-template-columns: 3fr 1fr 1fr 1fr 1fr 3fr;
+    align-items: center;
+}
+
+.header-item {
+    text-align: center;
+    font-family: 'Fredoka', sans-serif;
+    font-weight: 100;
+}
+
+.logo {
+    text-align: left;
+    font-family: 'League Gothic', sans-serif;
+    font-size: 24px;
+    letter-spacing: 4px;
+}
+
+.btn-tickets {
+    font-family: 'Fredoka', sans-serif;
+    justify-self:  center;
+    width: 50%;
+    text-align: center;
+    align-items: right;
+    background-color: rgb(125, 14, 230);
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 15px;
+}
+
+.btn-tickets:hover {
+    background-color: rgb(102, 3, 194);
+    transition: 1s;
+}
+
+.hero-content {
+    background-color: rgb(29, 29, 29);
+    height: 85vh;
+    text-align: center;
+}
+
+.description {
+    align-items: center;
+    padding-top: 75px;
+    padding-bottom: 105px;
+    background-color: aliceblue;
+    height: 75vh;
+}
+
+.description-grid {
+    width: 90%;
+    display: grid;
+    font-family: 'Fredoka', sans-serif;
+    grid-template-columns: 2fr 3fr;
+    column-gap: 40px;
+    margin: auto;
+}
+
+.artist-grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    column-gap: 1px;
+}
+
+.programacion {
+    background: rgb(29,29,29);
+    background: linear-gradient(90deg, rgba(29,29,29,1) 0%, rgba(35,0,61,1) 60%);
+    padding-top:75px;
+    padding-bottom: 75px;
+}
+
+.grid-programacion {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: auto;
+    width: 90%;
+    font-family: 'Fredoka', sans-serif;
+    text-align: center;
+    color: aliceblue;
+}
+
+.spotify {
+    width: 60%;
+    padding-top: 65px;
+    padding-bottom: 65px;
+    margin: auto;
+    font-family: 'Fredoka', sans-serif;
+    text-align: center;
+}
+
+.wrapper{
+    font-family: 'Fredoka', sans-serif;
+    padding-top: 45px;
+    padding-bottom: 45px;
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .wrapper .table{
+    background: aliceblue;
+    width: calc(33% - 20px);
+    padding: 30px 30px;
+    position: relative;
+    text-align: center;
+  }
+  .table .price-section{
+    display: flex;
+    justify-content: center;
+  }
+  .table .price-area{
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    padding: 2px;
+  }
+  
+  .aj_p{
+    text-align: center;
+  }
+  
+  p.aj_des {
+    color: grey;
+    padding-bottom: 30px;
+    font-size: 14px;
+  }
+  
+  .table.premium {
+    margin: -20px;
+  }
+  
+  .premium_all {
+    padding-top: 22px;
+  }
+  
+  .price-area .inner-area{
+    height: 100%;
+    width: 100%;
+    line-height: 117px;
+    text-align: center;
+    color: aliceblue;
+    position: relative;
+  }
+  
+  .price-area .inner-area .text{
+    font-size: 25px;
+    font-weight: 400;
+    position: absolute;
+    top: -10px;
+    left: 5px;
+  }
+  
+  .price-area .inner-area .price{
+    font-size: 25px;
+    font-weight: 500;
+  }
+  
+  .table .package-name{
+    width: 100%;
+    height: 2px;
+    margin :35px 0;
+    position: relative;
+  }
+  
+  .table .features li{
+    margin-bottom: 15px;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .features li .list-name{
+    font-size: 17px;
+    font-weight: 400;
+  }
+  
+  .table .btn{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .table .btn button{
+    width: 80%;
+    height: 50px;
+    color: aliceblue;
+    font-size: 20px;
+    font-weight: 500;
+    border: none;
+    outline: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .table .btn button:hover{
+    border-radius: 5px;
+  }
+  
+  .basic ::selection,
+  .basic .price-area,
+  .basic .inner-area,
+  .basic .head_tab h2{
+    color:#f9564f;
+  }
+  
+  .basic .btn button{
+    background: #f9564f;
+    color: aliceblue;
+    margin-top: -75px;
+  }
+  
+  .basic .btn button:hover{
+    background: rgb(29, 29, 29);
+    color: aliceblue;
+  }
+  
+  .premium ::selection,
+  .premium .price-area,
+  .premium .inner-area,
+  .premium .head_tab h2{
+    color: rgb(125, 14, 230);
+  }
+  
+  .premium .btn button{
+    background: rgb(125, 14, 230);
+    color: aliceblue;
+    margin-top: -75px;
+  }
+  
+  .premium .btn button:hover{
+    background: rgb(29, 29, 29);
+    color: aliceblue;
+  }
+
+  .form-ticket {
+      padding-top: 80px;
+      padding-bottom: 80px;
+      background: rgb(240,248,255);
+      background: linear-gradient(180deg, rgba(240,248,255,1) 0%, rgba(153,207,255,0.45) 100%);
+  }
+
+  .form-container {
+        width: 80%;
+        align-items: center;
+        margin : auto;
+  }
+
+  form { 
+      max-width:420px; margin:auto; 
+  }
+
+.feedback-input {
+  color:rgb(29, 29, 29);
+  font-family: 'Fredoka', sans-serif;
+  font-weight:400;
+  font-size: 18px;
+  border-radius: 5px;
+  line-height: 22px;
+  background-color: transparent;
+  border:2px solid rgb(125, 14, 230);
+  transition: all 0.5s;
+  padding: 13px;
+  margin-bottom: 15px;
+  width:100%;
+  box-sizing: border-box;
+  outline:0;
+}
+
+.feedback-input:focus { 
+    border:2px solid rgb(71, 5, 133); 
+}
+
+textarea {
+  height: 150px;
+  line-height: 150%;
+  resize:vertical;
+}
+
+[type="submit"] {
+  font-family: 'Fredoka', sans-serif;
+  width: 100%;
+  background:#7d0ee6;
+  border-radius:15px;
+  border:0;
+  cursor:pointer;
+  color:aliceblue;
+  font-size:24px;
+  padding-top:10px;
+  padding-bottom:10px;
+  transition: all 0.5s;
+  margin-top:15px;
+  font-weight:500;
+}
+[type="submit"]:hover { 
+    background:rgb(71, 5, 133); 
+}
+
+::placeholder {
+    color: rgb(29, 29, 29);
+  }
+
+  #pass {
+    font-family: 'Fredoka', sans-serif;
+    font-size: 18px;
+    color: rgb(29, 29, 29);
+    background-color: transparent;
+    border-radius: 5px;
+    width: 100%;
+    padding: 13px;
+    margin-bottom: 15px;
+    border:2px solid rgb(125, 14, 230);
+  }
+
+.patrocinadores {
+    align-items: center;
+    padding-top: 55px;
+    padding-bottom: 55px;
+    max-height: 30vh;
+    background-color: rgb(29, 29, 29);
+}
+
+.grid-patrocinadores {
+    width: 90%;
+    display: grid;
+    font-family: 'Fredoka', sans-serif;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr; 
+    grid-template-rows: 1fr 1fr; 
+    column-gap: 5px;
+    margin: auto;
+    align-content: center;
+    text-align: center;
+    row-gap: 30px;
+}
+
+footer {
+    font-family: 'Fredoka', sans-serif;
+    background-color: rgb(0, 0, 0);
+    color: aliceblue;
+    text-align: center;
+    padding-top:20px;
+    padding-bottom:20px;
+}
+
+@keyframes quiet {
+    25%{
+      transform: scaleY(.6);
+    }
+    50%{
+      transform: scaleY(.4);
+    }
+    75%{
+      transform: scaleY(.8);
+    }
+  }
+  
+  @keyframes normal {
+    25%{
+      transform: scaleY(1.2);
+    }
+    50%{
+      transform: scaleY(.4);
+    }
+    75%{
+      transform: scaleY(.6);
+    }
+  }
+  @keyframes loud {
+    25%{
+      transform: scaleY(1.2);
+    }
+    50%{
+      transform: scaleY(.4);
+    }
+    75%{
+      transform: scaleY(1.2);
+    }
+  }
+  .boxContainer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    margin: auto;
+    margin-top: 50px;
+    height: 64px;
+    --boxSize: 8px;
+    --gutter: 4px;
+    width: calc((var(--boxSize) + var(--gutter)) * 5);
+  }
+  
+  .box{
+    align-self: center;
+    transform: scaleY(.4);
+    height: 100%;
+    width: var(--boxSize);
+    background: rgb(125, 14, 230);
+    animation-duration: 1.2s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    border-radius: 8px;
+  }
+  
+  .box1{
+    animation-name: quiet;
+  }
+  
+  .box2{
+    animation-name: normal;
+  }
+  
+  .box3{
+    animation-name: quiet;
+  }
+  
+  .box4{
+    animation-name: loud;
+  }
+  
+  .box5{
+    animation-name: quiet;
+  }

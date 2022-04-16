@@ -1,455 +1,423 @@
 * {
-    margin: 0;
+  margin: 0;
 }
 
 html {
-    scroll-behavior: smooth;
-  }
+  scroll-behavior: smooth;
+}
 
 header {
-    align-items: center;
-    background: rgb(59,2,133);
-    background: linear-gradient(180deg, rgba(59,2,133,1) 0%, rgba(105,7,233,1) 100%);
-    padding-top: 20px;
-    padding-bottom: 20px;
-    padding-left: 50px;
-    padding-right: 100px;
-    overflow: hidden;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 1;
+  align-items: center;
+  background: rgb(59, 2, 133);
+  background: linear-gradient(180deg, rgba(59, 2, 133, 1) 0%, rgba(105, 7, 233, 1) 100%);
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 50px;
+  padding-right: 100px;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
 }
 
 a {
-    text-decoration: none;
-    color: aliceblue;
+  text-decoration: none;
+  color: aliceblue;
 }
 
 .header-grid {
-    display: grid;
-    grid-template-columns: 3fr 1fr 1fr 1fr 1fr 3fr;
-    align-items: center;
+  display: grid;
+  grid-template-columns: 3fr 1fr 1fr 1fr 1fr 1fr 3fr;
+  align-items: center;
 }
 
 .header-item {
-    text-align: center;
-    font-family: 'Fredoka', sans-serif;
-    font-weight: 100;
+  text-align: center;
+  font-family: 'Fredoka', sans-serif;
+  font-weight: 100;
 }
 
 .logo {
-    text-align: left;
-    font-family: 'League Gothic', sans-serif;
-    font-size: 24px;
-    letter-spacing: 4px;
+  text-align: left;
+  font-family: 'League Gothic', sans-serif;
+  font-size: 24px;
+  letter-spacing: 4px;
 }
 
 .btn-tickets {
-    font-family: 'Fredoka', sans-serif;
-    justify-self:  center;
-    width: 50%;
-    text-align: center;
-    align-items: right;
-    background-color: rgb(125, 14, 230);
-    padding-top: 5px;
-    padding-bottom: 5px;
-    padding-left: 15px;
-    padding-right: 15px;
-    border-radius: 15px;
+  font-family: 'Fredoka', sans-serif;
+  justify-self: center;
+  width: 50%;
+  text-align: center;
+  align-items: right;
+  background-color: rgb(125, 14, 230);
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 15px;
+  padding-right: 15px;
+  border-radius: 15px;
 }
 
 .btn-tickets:hover {
-    background-color: rgb(102, 3, 194);
-    transition: 1s;
+  background-color: rgb(102, 3, 194);
+  transition: 1s;
 }
 
+/*Hero content*/
 .hero-content {
-    background-color: rgb(29, 29, 29);
-    height: 85vh;
-    text-align: center;
+  width: 100%;
+  height: 10%;
+  margin: 0;
+  padding: 0;
 }
 
+/*Para descripción*/
 .description {
-    align-items: center;
-    padding-top: 75px;
-    padding-bottom: 105px;
-    background-color: aliceblue;
-    height: 75vh;
+  align-items: center;
+  padding-top: 75px;
+  padding-bottom: 105px;
+  background-color: aliceblue;
+  height: 75vh;
+  margin: 0;
+  padding: 0;
 }
 
 .description-grid {
-    width: 90%;
-    display: grid;
-    font-family: 'Fredoka', sans-serif;
-    grid-template-columns: 2fr 3fr;
-    column-gap: 40px;
-    margin: auto;
+  width: 90%;
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+  column-gap: 40px;
+  margin: auto;
+  align-items: center;
+
 }
 
-.artist-grid-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    column-gap: 1px;
+#descripcion {
+  font-family: 'League Gothic', sans-serif;
+  font-size: 48px;
 }
 
+#descripcion_texto {
+  font-family: 'Fredoka', sans-serif;
+}
+
+/*Para mapa*/
+.mapa-grid-container {
+  display: grid;
+  margin: auto;
+  padding: 0;
+}
+
+/*Para programación*/
 .programacion {
-    background: rgb(29,29,29);
-    background: linear-gradient(90deg, rgba(29,29,29,1) 0%, rgba(35,0,61,1) 60%);
-    padding-top:75px;
-    padding-bottom: 75px;
+  background: rgb(29, 29, 29);
+  background: linear-gradient(90deg, rgba(29, 29, 29, 1) 0%, rgba(35, 0, 61, 1) 60%);
+  padding-top: 75px;
+  padding-bottom: 75px;
+
 }
 
 .grid-programacion {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    margin: auto;
-    width: 90%;
-    font-family: 'Fredoka', sans-serif;
-    text-align: center;
-    color: aliceblue;
-}
-
-.spotify {
-    width: 60%;
-    padding-top: 65px;
-    padding-bottom: 65px;
-    margin: auto;
-    font-family: 'Fredoka', sans-serif;
-    text-align: center;
-}
-
-.wrapper{
-    font-family: 'Fredoka', sans-serif;
-    padding-top: 45px;
-    padding-bottom: 45px;
-    width: 80%;
-    margin: auto;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-  }
-  .wrapper .table{
-    background: aliceblue;
-    width: calc(33% - 20px);
-    padding: 30px 30px;
-    position: relative;
-    text-align: center;
-  }
-  .table .price-section{
-    display: flex;
-    justify-content: center;
-  }
-  .table .price-area{
-    height: 120px;
-    width: 120px;
-    border-radius: 50%;
-    padding: 2px;
-  }
-  
-  .aj_p{
-    text-align: center;
-  }
-  
-  p.aj_des {
-    color: grey;
-    padding-bottom: 30px;
-    font-size: 14px;
-  }
-  
-  .table.premium {
-    margin: -20px;
-  }
-  
-  .premium_all {
-    padding-top: 22px;
-  }
-  
-  .price-area .inner-area{
-    height: 100%;
-    width: 100%;
-    line-height: 117px;
-    text-align: center;
-    color: aliceblue;
-    position: relative;
-  }
-  
-  .price-area .inner-area .text{
-    font-size: 25px;
-    font-weight: 400;
-    position: absolute;
-    top: -10px;
-    left: 5px;
-  }
-  
-  .price-area .inner-area .price{
-    font-size: 25px;
-    font-weight: 500;
-  }
-  
-  .table .package-name{
-    width: 100%;
-    height: 2px;
-    margin :35px 0;
-    position: relative;
-  }
-  
-  .table .features li{
-    margin-bottom: 15px;
-    list-style: none;
-    display: flex;
-    justify-content: space-between;
-  }
-  
-  .features li .list-name{
-    font-size: 17px;
-    font-weight: 400;
-  }
-  
-  .table .btn{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-  }
-  
-  .table .btn button{
-    width: 80%;
-    height: 50px;
-    color: aliceblue;
-    font-size: 20px;
-    font-weight: 500;
-    border: none;
-    outline: none;
-    border-radius: 25px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-  }
-  
-  .table .btn button:hover{
-    border-radius: 5px;
-  }
-  
-  .basic ::selection,
-  .basic .price-area,
-  .basic .inner-area,
-  .basic .head_tab h2{
-    color:#f9564f;
-  }
-  
-  .basic .btn button{
-    background: #f9564f;
-    color: aliceblue;
-    margin-top: -75px;
-  }
-  
-  .basic .btn button:hover{
-    background: rgb(29, 29, 29);
-    color: aliceblue;
-  }
-  
-  .premium ::selection,
-  .premium .price-area,
-  .premium .inner-area,
-  .premium .head_tab h2{
-    color: rgb(125, 14, 230);
-  }
-  
-  .premium .btn button{
-    background: rgb(125, 14, 230);
-    color: aliceblue;
-    margin-top: -75px;
-  }
-  
-  .premium .btn button:hover{
-    background: rgb(29, 29, 29);
-    color: aliceblue;
-  }
-
-  .form-ticket {
-      padding-top: 80px;
-      padding-bottom: 80px;
-      background: rgb(240,248,255);
-      background: linear-gradient(180deg, rgba(240,248,255,1) 0%, rgba(153,207,255,0.45) 100%);
-  }
-
-  .form-container {
-        width: 80%;
-        align-items: center;
-        margin : auto;
-  }
-
-  form { 
-      max-width:420px; margin:auto; 
-  }
-
-.feedback-input {
-  color:rgb(29, 29, 29);
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+  margin: auto;
+  width: 90%;
   font-family: 'Fredoka', sans-serif;
-  font-weight:400;
-  font-size: 18px;
-  border-radius: 5px;
-  line-height: 22px;
-  background-color: transparent;
-  border:2px solid rgb(125, 14, 230);
-  transition: all 0.5s;
-  padding: 13px;
+  text-align: center;
+  color: aliceblue;
+}
+
+h1 {
+  font-family: 'League Gothic', sans-serif;
+  font-size: 48px;
   margin-bottom: 15px;
-  width:100%;
-  box-sizing: border-box;
-  outline:0;
+  color: #f9564f;
+  margin: 0;
+  padding: 0;
 }
 
-.feedback-input:focus { 
-    border:2px solid rgb(71, 5, 133); 
-}
-
-textarea {
-  height: 150px;
-  line-height: 150%;
-  resize:vertical;
-}
-
-[type="submit"] {
+h4 {
   font-family: 'Fredoka', sans-serif;
+}
+
+/*Para spotify*/
+.spotify {
+  display: grid;
+  margin: auto;
+  padding: 0;
+  width: 90%;
+  height: 150%;
+}
+
+/*Para precios y puntos de venta*/
+h3 {
+  color: #5f127c;
+  font-family: 'League Gothic', sans-serif;
+}
+
+#price {
+  display: flex;
+  flex-direction: row;
+  background-color: #F8F6E5;
+}
+
+#price>div {
+  background-color: #F8F6E5;
+  width: 50em;
+  justify-content: center;
+}
+
+#price {
+  text-align: center;
+  font-size: 200px;
+  font-family: "Bebas Neue", cursive;
+  margin: 0;
+}
+
+.flip-container {
+  background-color: transparent;
+  width: 300px;
+  height: 400px;
+  perspective: 1000px;
+  margin: auto auto;
+}
+
+.card {
+  position: relative;
+  display: inline-block;
   width: 100%;
-  background:#7d0ee6;
-  border-radius:15px;
-  border:0;
-  cursor:pointer;
-  color:aliceblue;
-  font-size:24px;
-  padding-top:10px;
-  padding-bottom:10px;
-  transition: all 0.5s;
-  margin-top:15px;
-  font-weight:500;
-}
-[type="submit"]:hover { 
-    background:rgb(71, 5, 133); 
+  height: 100%;
+  text-align: center;
+  transform-style: preserve-3d;
+  transition: transform 0.8s cubic-bezier(0.75, 0, 0.85, 1);
 }
 
-::placeholder {
-    color: rgb(29, 29, 29);
-  }
+.card h3,
+card p {
+  display: block;
+}
 
-  #pass {
-    font-family: 'Fredoka', sans-serif;
-    font-size: 18px;
-    color: rgb(29, 29, 29);
-    background-color: transparent;
-    border-radius: 5px;
-    width: 100%;
-    padding: 13px;
-    margin-bottom: 15px;
-    border:2px solid rgb(125, 14, 230);
-  }
+.card p,
+.card button {
+  color: black;
+}
 
+/* Para que gire lo de precios y puntos de venta */
+.flip-container:hover .card {
+  transform: rotateY(180deg);
+}
+
+.frente,
+.dorso {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  margin: 0;
+  padding: 0;
+}
+
+.frente {
+  background-color: rgb(240, 248, 255);
+  color: black;
+  display: flex;
+  font-family: 'Fredoka', sans-serif;
+  font-size: 45px;
+  margin: 0;
+  padding: 0;
+}
+
+.dorso {
+  background-color: #F8F6E5;
+  color: #f9564f;
+  transform: rotateY(180deg);
+  text-align: center;
+  display: flex;
+  font-family: 'Fredoka', sans-serif;
+
+}
+
+.dorso p {
+  font-size: 0.65em;
+}
+
+.dorso button:hover {
+  color: #5f127c;
+  border-color: #5f127c;
+  font-weight: bold;
+}
+
+UL.col3 {
+  padding-right: 0px;
+  padding-left: 0px;
+  float: left;
+  padding-bottom: 0px;
+  margin: 15px 0px;
+  width: 100%;
+  padding-top: 0px;
+  list-style-type: none;
+  font-size: 20px;
+}
+
+UL.col3 LI {
+  padding-right: 2px;
+  display: inline;
+  padding-left: 2px;
+  float: left;
+  padding-bottom: 2px;
+  width: 30%;
+  padding-top: 2px;
+}
+
+.button {
+  background-color: #f9564f;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: -75px;
+}
+
+.button:hover {
+  background: rgb(29, 29, 29);
+  color: aliceblue;
+}
+
+/*Para patrocinadores*/
 .patrocinadores {
-    align-items: center;
-    padding-top: 55px;
-    padding-bottom: 55px;
-    max-height: 30vh;
-    background-color: rgb(29, 29, 29);
+  align-items: center;
+  padding-top: 55px;
+  padding-bottom: 55px;
+  max-height: 30vh;
+  background-color: rgb(29, 29, 29);
+
 }
 
 .grid-patrocinadores {
-    width: 90%;
-    display: grid;
-    font-family: 'Fredoka', sans-serif;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr; 
-    grid-template-rows: 1fr 1fr; 
-    column-gap: 5px;
-    margin: auto;
-    align-content: center;
-    text-align: center;
-    row-gap: 30px;
+  width: 90%;
+  display: grid;
+  font-family: 'Fredoka', sans-serif;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  column-gap: 5px;
+  margin: auto;
+  align-content: center;
+  text-align: center;
+  row-gap: 30px;
 }
 
+#sponsorsTexto {
+  text-align: center;
+  color: white;
+  margin: 0;
+  padding: 0;
+  font-family: 'League Gothic', sans-serif;
+  font-size: 48px;
+}
+
+/*Para footer*/
 footer {
-    font-family: 'Fredoka', sans-serif;
-    background-color: rgb(0, 0, 0);
-    color: aliceblue;
-    text-align: center;
-    padding-top:20px;
-    padding-bottom:20px;
+  font-family: 'Fredoka', sans-serif;
+  background-color: rgb(0, 0, 0);
+  color: aliceblue;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 @keyframes quiet {
-    25%{
-      transform: scaleY(.6);
-    }
-    50%{
-      transform: scaleY(.4);
-    }
-    75%{
-      transform: scaleY(.8);
-    }
+  25% {
+    transform: scaleY(.6);
   }
-  
-  @keyframes normal {
-    25%{
-      transform: scaleY(1.2);
-    }
-    50%{
-      transform: scaleY(.4);
-    }
-    75%{
-      transform: scaleY(.6);
-    }
-  }
-  @keyframes loud {
-    25%{
-      transform: scaleY(1.2);
-    }
-    50%{
-      transform: scaleY(.4);
-    }
-    75%{
-      transform: scaleY(1.2);
-    }
-  }
-  .boxContainer{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    text-align: center;
-    margin: auto;
-    margin-top: 50px;
-    height: 64px;
-    --boxSize: 8px;
-    --gutter: 4px;
-    width: calc((var(--boxSize) + var(--gutter)) * 5);
-  }
-  
-  .box{
-    align-self: center;
+
+  50% {
     transform: scaleY(.4);
-    height: 100%;
-    width: var(--boxSize);
-    background: rgb(125, 14, 230);
-    animation-duration: 1.2s;
-    animation-timing-function: ease-in-out;
-    animation-iteration-count: infinite;
-    border-radius: 8px;
   }
-  
-  .box1{
-    animation-name: quiet;
+
+  75% {
+    transform: scaleY(.8);
   }
-  
-  .box2{
-    animation-name: normal;
+}
+
+@keyframes normal {
+  25% {
+    transform: scaleY(1.2);
   }
-  
-  .box3{
-    animation-name: quiet;
+
+  50% {
+    transform: scaleY(.4);
   }
-  
-  .box4{
-    animation-name: loud;
+
+  75% {
+    transform: scaleY(.6);
   }
-  
-  .box5{
-    animation-name: quiet;
+}
+
+@keyframes loud {
+  25% {
+    transform: scaleY(1.2);
   }
+
+  50% {
+    transform: scaleY(.4);
+  }
+
+  75% {
+    transform: scaleY(1.2);
+  }
+}
+
+.boxContainer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  margin: auto;
+  margin-top: 50px;
+  height: 64px;
+  --boxSize: 8px;
+  --gutter: 4px;
+  width: calc((var(--boxSize) + var(--gutter)) * 5);
+}
+
+.box {
+  align-self: center;
+  transform: scaleY(.4);
+  height: 100%;
+  width: var(--boxSize);
+  background: rgb(125, 14, 230);
+  animation-duration: 1.2s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  border-radius: 8px;
+}
+
+.box1 {
+  animation-name: quiet;
+}
+
+.box2 {
+  animation-name: normal;
+}
+
+.box3 {
+  animation-name: quiet;
+}
+
+.box4 {
+  animation-name: loud;
+}
+
+.box5 {
+  animation-name: quiet;
+}

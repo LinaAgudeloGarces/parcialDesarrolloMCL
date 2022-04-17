@@ -143,11 +143,58 @@ h4 {
 
 /*Para spotify*/
 .spotify {
-  display: grid;
+  display: flex;
+  flex-direction: column;
   margin: auto;
   padding: 0;
-  width: 90%;
-  height: 150%;
+  width: 100%;
+  height: 100%;
+  
+}
+
+/*Para animación de spotify*/
+#imgAnimada{
+  /*Hijo*/
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(rgb(255, 255, 255) 50%, rgb(36, 200, 93) 50%);
+              /*Arriba IZ DER, Abajo IX DER border-radius:12px 12px 12px 0px; */
+  border-radius:0px 0px 12px 12px;
+}
+
+
+/*Texto que dice "La magia del festival en una playlist"*/
+#txtimgAnimada{
+  text-align: center;
+          color: rgb(0, 0, 0);
+          font-size: 20px;
+          width: 50%;
+          margin: 0px;
+}
+
+#circuloAAnimar{
+ 
+  border-radius:500px;
+  animation-name: animacion;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSohXa8TUcFsR-pDK5COp6a_HLuLR4KTTqzr__xk3oSI7r5E5_32h1MBvklYDBRuUoPuIk&usqp=CAU");
+}
+
+@keyframes animacion{
+  from {
+      width: 0px;
+      height: 0px;
+    }
+  
+    to {
+      width: 230px;
+      height: 230px;
+    }
 }
 
 /*Para precios y puntos de venta*/

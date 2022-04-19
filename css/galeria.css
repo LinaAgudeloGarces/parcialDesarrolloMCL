@@ -98,9 +98,9 @@
   }
 
   .img-container {
-    width: 350px;
-    height: 350px;
-
+    width: 450px;
+    height: 450px;
+    justify-self: center;
   }
 
   .img-description {
@@ -112,5 +112,5 @@
     padding-bottom: 7px;
     padding-left: 20px;
     padding-right: 20px;
-    margin-top: 317px;
+    margin-top: 417px;
   }

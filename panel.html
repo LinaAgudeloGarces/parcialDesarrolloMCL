@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Legends Fest 2022</title>
+  <!--Fuentes-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400&family=League+Gothic&family=Russo+One&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="./css/panel.css">
+</head>
+
+<body>
+  <header>
+    <div class="logo">
+        <h1>Legends Fest</h1>
+    </div>
+  </header>
+
+  <main>
+      <div class="container-artistas">
+        <div>
+            <h3 style="font-family: 'Fredoka', sans-serif;">Artistas</h3>
+            <img width="250px" height="250px" style="border: black solid 2px;" src="./src/artistas/bad_bunny.jpeg" alt="">
+            <div>
+                <button class="btn-artista">Seleccionar imagen</button>
+            </div>
+        </div>
+        <div style="padding-top: 35px;">
+            <div class="input-container">
+                <select class="input-box" name="artistas" id="artistas" placeholder="Nuevo Artista">
+                    <option selected="selected" value="volvo">Nuevo Artista</option>
+                </select>
+            </div>
+            <div class="input-container">
+                <input class="input-box" type="text" id="nombre-artista" name="nombre-artista" placeholder="Nombre Artista">
+            </div>
+            <div class="input-container">
+                <textarea class="input-box" id="area-descripcion" name="nombre-descripcion" rows="4" cols="50" placeholder="Descripción"></textarea>
+            </div>
+            <div class="input-container">
+                <input class="input-box" type="text" id="spotify-artista" name="spotify-artista" placeholder="Link a lista de Spotify">
+            </div>
+        </div>
+      </div>
+        
+      <!--Footer-->
+      <footer>
+        <p>Terminos y condiciones</p>
+        <p>Copyright&copy; Legends Fest - 2022
+        <p>
+        <h2 style="font-family: 'League Gothic', sans-serif; letter-spacing: 3px; font-size: 52px; margin-top: 5px">
+          Legends Fest</h2>
+      </footer>
+  </main>
+</body>
+
+</html>

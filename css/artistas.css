@@ -99,6 +99,10 @@
     font-weight: 300;
 }
 
+img {
+  object-fit: cover;
+}
+
 .btn-spotify {
     font-family: 'Helvetica', sans-serif;
     width: 100%;

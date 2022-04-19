@@ -96,20 +96,20 @@
 .artist-name {
     margin-top: 20px;
     margin-bottom: 20px;
-    font-family: 'Helvetica', sans-serif;
+    font-family: 'Fredoka', sans-serif;
     font-size: 24px;
     font-weight: 600;
 }
 
 .artist-description {
     margin-bottom: 30px;
-    font-family: 'Helvetica', sans-serif;
+    font-family: 'Fredoka', sans-serif;
     font-size: 16px;
     font-weight: 300;
 }
 
 .btn-spotify {
-    font-family: 'Helvetica', sans-serif;
+    font-family: 'Fredoka', sans-serif;
     width: 100%;
     text-align: center;
     align-items: right;

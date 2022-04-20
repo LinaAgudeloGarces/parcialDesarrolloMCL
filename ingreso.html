@@ -32,14 +32,24 @@
           <div id="divLogin">
               <h3>Ingreso Administradores             
               </h3>
-              <div id="divUsCon">
+                <div id="divForm">
+                <!--Formulario-->
+                <form>
                   <!--Campo para el usuario-->
-                  <input type="text" id="name" name="name" class="campo" required minlength="1" maxlength="15" size="30" placeholder="Usuario"> 
-                  <!--Campo para la contraseña-->
-                  <input type="password" id="contra" name="contra" class="campo" required minlength="1" maxlength="12" size="30" placeholder="Contraseña"> 
+                  <div id="divUsCon">
+                  <input type="text" id="name" name="name" class="campo" required minlength="1" maxlength="15" size="30" placeholder="Usuario" required> 
+                  <div id="divContra">
+                    <!--Campo para la contraseña-->
+                    <input type="password" id="contra" name="contra" class="campo" required minlength="1" maxlength="12" size="30" placeholder="Contraseña" required> 
+                    <!--Para que la muestre-->
+                    <span id="span">Mostrar</span>
+                 </div>
+                  </div>
+                  <!--Ingresar-->
+                 <input id="boton" type="submit" class="button" value="Iniciar sesión">
+                </form>
               </div>
-              <!--Ingresar-->
-              <input type="button" class="button" value="Iniciar sesión">
+              
           </div>
         </div>
       </div>
@@ -52,6 +62,9 @@
         <h2 style="font-family: 'League Gothic', sans-serif; letter-spacing: 3px; font-size: 52px; margin-top: 5px">
           Legends Fest</h2>
       </footer>
+
+      <!--Script-->
+      <script src="./js/ingreso.js"></script>
   </main>
 </body>
 

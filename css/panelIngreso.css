@@ -132,6 +132,12 @@ a {
   justify-content: space-around;
 }
 
+#divForm{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
 h1 {
   font-family: 'League Gothic', sans-serif;
   font-size: 48px;
@@ -243,6 +249,17 @@ card p {
 
 }
 
+#divContra{
+  display: flex;
+}
+
+#span{
+    text-transform: uppercase;
+    cursor: pointer;
+    background-color: #cccccc;
+    color: #000000;
+}
+
 .dorso p {
   font-size: 0.65em;
 }
@@ -286,7 +303,7 @@ UL.col3 LI {
   border-radius: 25px;
   cursor: pointer;
   transition: all 0.3s ease;
-
+  margin-top: 4vh;
   width: 30vh;
 }
 

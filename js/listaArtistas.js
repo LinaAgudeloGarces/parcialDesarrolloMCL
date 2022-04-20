@@ -9,7 +9,7 @@ let artistas = [
         nombre: 'Dua Lipa',
         descripcion: 'Es una cantante, compositora, modelo y actriz británica de ascendencia albanokosovar.',
         spotify: 'https://open.spotify.com/playlist/37i9dQZF1DX3fRquEp6m8D',
-        img: './src/artistas/dua.jpeg'
+        img: './src/artistas/dua.jpg'
     },
     {
         nombre: 'Bad Bunny',

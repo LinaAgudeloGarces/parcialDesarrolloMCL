@@ -15,9 +15,7 @@
     padding-left: 50px;
     padding-right: 100px;
     overflow: hidden;
-    position: fixed;
     top: 0;
-    width: 100%;
     z-index: 1;
   }
 
@@ -49,7 +47,7 @@
     font-family: 'League Gothic', sans-serif;
     font-size: 48px;
     margin-bottom: 15px;
-    color: #f9564f;
+    color: aliceblue;
     margin: 0;
     padding: 0;
   }/*  */
@@ -76,7 +74,7 @@
 .artist_container {
     padding-left: 25px;
     padding-right: 25px;
-    margin-top: 150px;
+    margin-top: 100px;
     margin-bottom: 100px;
     width: 100%;
     display: grid;

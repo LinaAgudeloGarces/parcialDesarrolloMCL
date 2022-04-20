@@ -43,10 +43,12 @@ a {
 .divs{
     font-family: 'Fredoka',
     sans-serif;
+    height: 100%;
+
 }
 
 h1{
-    color: #f9564f;
+    color: #ffffff;
 }
 /*Fuente para título*/
 @import url("https://fonts.googleapis.com/css2?family=Ultra&display=swap");
@@ -60,9 +62,11 @@ body {
 /*Para quiz*/
 .container {
     display: flex;
-    flex-direction: row;
-    height: 50vh;
+    flex-direction: column;
+    height: 55vh;
     background-color: aliceblue;
+    justify-content: center;
+    align-items: center;
 }
 
 .container div {
@@ -72,12 +76,17 @@ body {
     justify-content: center;
     align-items: center;
 }
+
+#quiz{
+    width: 100%;
+    height: 55vh;
+}
 .container-grid{
-    width: 90%;
-    display: grid;
-    grid-template-rows: 2fr;
-    column-gap: 20px;
-    align-items: center;
+    width: 100%;
+    height: 55vh;
+    display: flex;
+    flex-direction: column;
+   
 }
 
 #descuento{
@@ -244,13 +253,34 @@ input[type=text]:focus {
     align-items: center;
 }
 
+
 /*Para botón comprar ahora*/
 #comprarAhora {
-    background-color: rgb(29, 29, 29);
-    color: black;
-    font-size: 17px;
-    text-align: right;
+        background-color: #f9564f;
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        border-radius: 25px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        margin-top: -75px;
+      
 }
+
+      
+#comprarAhora:hover {
+  background: rgb(29, 29, 29);
+  color: aliceblue;
+}
+
+#comprar{
+    text-align: center;
+}
+
 .wrap {
     height: 100%;
     display: flex;
@@ -260,42 +290,9 @@ input[type=text]:focus {
     padding-bottom: 30px;
 }
 
-.buttonComprarAhora {
-    min-width: 150px;
-    min-height: 30px;
-    font-family: 'Montserrat',
-    sans-serif;
-    font-size: 17px;
-    text-transform: uppercase;
-    letter-spacing: 1.3px;
-    font-weight: 400;
-    color: #313133;
-    background: aliceblue;
-    background: linear-gradient(90deg, aliceblue 0%, aliceblue 100%);
-    border: none;
-    border-radius: 1000px;
-    box-shadow: 12px 12px 24px rgb(125, 14, 230);
-    transition: all 0.3s ease-in-out 0s;
-    cursor: pointer;
-    outline: none;
-    position: relative;
-    padding: 12px;
-}
 
-.buttonComprarAhora::before {
-    content: '';
-    border-radius: 1000px;
-    min-width: calc(200px + 12px);
-    min-height: calc(45px + 12px);
-    border: 6px solid rgb(125, 14, 230);
-    box-shadow: 0 0 60px rgb(125, 14, 230);
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    opacity: 0;
-    transition: all .3s ease-in-out 0s;
-}
+
+
 
 .buttonComprarAhora:hover,
 .buttonComprarAhora:focus {

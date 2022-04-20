@@ -1,95 +1,95 @@
 const questions = [
   {
-    question: "¿Cuál NO es un festival de música?",
+    question: "¿Cuál es el disco más vendido de Michael Jackson?",
     choices: [
-      "Estéreo picnic",
-      "La Solar Festival",
-      "Festival Rock al Parque",
-      " Festival Crazy",
+      "Off the Wall",
+      "Dangerous",
+      "Bad",
+      "Thriller",
     ],
     answer: 3,
   },
 
   {
-    question: "¿En qué ciudad se desarrolla el festival Estéreo picnic?",
+    question: "¿Cuál es el quinto título del álbum Future Nostalgia de Dua Lipa?",
     choices: [
-      "Medellin,Colombia",
-      "Bogotá,Colombia",
-      "Cali,Colombia",
-      "Cartagena,Colombia",
+      "Love Again",
+      "Levitating",
+      "Physical",
+      "Break My Heart",
     ],
     answer: 1,
   },
 
   {
-    question: "¿Cuál es el festival gratuito más grande de América Latina?",
+    question: "¿Cuál de las siguientes canciones NO es de Bad Bunny con Bryant Myers?",
     choices: [
-      "La Solar Festival",
-      "Jamming festival",
-      "Estereo Picnic",
-      "Festival Rock al parque",
+      "Un ratito mas",
+      "Pa ti",
+      "Triste",
+      "Soy peor",
     ],
     answer: 3,
   },
 
   {
-    question: "¿Qué festival incluye electrónica, house y tecno?",
+    question: "¿Con quién canta Christian Nodal en la canción Botella Tras Botella?",
     choices: [
-      "Estereo Beach Festival",
-      "Soundhearts Festival",
-      "Storyland festival",
-      "Be you Fest",
+      "Pipe Bueno",
+      "Jhonny Rivera",
+      "Gera MX",
+      "Jessi Uribe",
     ],
     answer: 2,
   },
 
   {
     question:
-      "¿En qué festival se encuentra no solo música sino también actividades como yoga, surf, masajes y gastronomía?",
+      "¿Cuándo se formó el grupo Jesse & Joy?",
     choices: [
-      "Festelar 2018",
-      "Estereo Beach Festival",
-      "Tatacoa Festival",
-      "Storyland Festival",
+      "2004",
+      "2005",
+      "2006",
+      "2007",
     ],
     answer: 1,
   },
 
   {
-    question: "¿En qué año se realizó el primer festival de música Coachella?",
-    choices: ["1990", "1999", "2000", "2010"],
+    question: "¿En qué video musical de Michael Jackson aparece Eddie Murphy?",
+    choices: ["Smooth Criminal", "Remember The Time", "They Don't Care About Us", "Thriller"],
     answer: 1,
   },
 
   {
     question:
-      "¿En qué estado de Estados Unidos tiene lugar el festival de música Coachella?",
-    choices: ["California", "Ohio", "Florida", "Nueva York"],
+      "¿En qué idioma canta Dua Lipa, en la canción Fever, a parte del inglés?",
+    choices: ["Francés", "Español", "Ruso", "Catalán"],
     answer: 0,
   },
 
   {
     question:
-      "¿En qué mes se realiza el festival de música del pacífico Petronio Álvarez?",
-    choices: ["Julio", "Agosto", "Octubre", "Diciembre"],
+      "¿Cuál de las siguientes canciones no hace parte del álbum YHLQMDLG de Bad Bunny?",
+    choices: ["Yo perreo sola", "Dákiti", "Si veo a tu mamá", "Solía"],
     answer: 1,
   },
 
   {
     question:
-      "¿En qué año se realizó el primer festival de música del pacífico Petronio Álvarez?",
-    choices: ["1990", "1996", "2000", " 2005"],
+      "¿Cómo se llama la canción de Christian Nodal con Juanes?",
+    choices: ["Probablemente", "Tequila", "Pa' olvidarme de ella", "Guaro"],
     answer: 1,
   },
 
   {
     question:
-      "¿Cuál es uno de los festivales de música electrónica más emblemático en la actualidad?",
+      "¿Cuál es el nombre de los hermanos de Jesse & Joy?",
     choices: [
-      "Daydream festival",
-      "Ultra",
-      "Tomorrowland",
-      " Alfa future people",
+      "Joy García y Jesse García",
+      "Joy Pérez y Jesse Pérez",
+      "Joy Huerta y Jesse Huerta",
+      "Joy Flores y Jesse Flores",
     ],
     answer: 2,
   },
@@ -116,7 +116,7 @@ function mostrarPregunta(indice) {
         <label for="option2"><input type="radio" name="answer" id="option2" value="1">${questions[indice].choices[1]}</label><br>
         <label for="option3"><input type="radio" name="answer" id="option3" value="2">${questions[indice].choices[2]}</label><br>
         <label for="option4"><input type="radio" name="answer" id="option4" value="3">${questions[indice].choices[3]}</label><br>
-      <button class="btn first" type="button" onclick="compararRespuesta(indice)">Siguiente</button>
+      <button class="btn first" type="button" onclick="compararRespuesta(indice)" >Siguiente</button>
     </div>
     `
     : mostrarCodigo();
@@ -201,13 +201,14 @@ function totalCompra() {
       precio = 899_900;
       total = precio * cantidadInput.value * 0.5;
     }
-  } else {
+  } else{
     if (tipoBoletaInput.value === "basic") {
       precio = 399_900;
       total = precio * cantidadInput.value;
     } else if (tipoBoletaInput.value === "full") {
       precio = 899_900;
       total = precio * cantidadInput.value;
+    }else if(tipoBoletaInput.value === ""){
     }
   }
 

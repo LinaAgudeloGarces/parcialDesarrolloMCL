@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    
+
     <title>Compra de boletas | Legends Fest 2022</title>
     <!--Fuentes-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -10,9 +11,10 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400&family=League+Gothic&family=Russo+One&display=swap"
         rel="stylesheet">
-    
+
     <link rel="stylesheet" href="./css/comprarBoletas.css">
 </head>
+
 <body>
     <header>
         <div class="header-grid">
@@ -23,55 +25,53 @@
     </header>
     <main>
         <!--Quiz-->
-        <div>
-            <div class="container"> 
+        <div class="container">
+            <div class="container-grid">
                 <div id="quiz"></div>
+                <div id="codigo"></div>
             </div>
         </div>
-        <!--Tipo,cantidad y total-->
+        <!--Tipo de boleta,cantidad,código de descuento y total-->
         <div id="seleccionBoleta" class="seleccionBoleta">
-                <div class="seleccionBoleta-grid">
-                    <div>
-                        <label for="city">Tipo de boleta:</label>
-                        <select name="city" id="city">
-                            <option selected>...</option>
-                            <option value="cali">Basic Pass Legends Fest</option>
-                            <option value="bogota">Full Pass Legends Fest</option>
-                        </select><br>
-                    </div>
-                    <!--Cantidad-->
-                    <div>
-                        <label for="city">Cantidad:</label>
-                        <input id="number" type="number" value="1" min="0" max="10">
-                    </div>
-                    <!--Total-->
-                    <div>
-                        <label for="city">Total:</label>
-                    </div>
+            <div class="seleccionBoleta-grid">
+                <div>
+                    <label for="tipo">Tipo de boleta:</label>
+                    <select id="tipo" name="tipo">
+                        <option selected>...</option>
+                        <option value="basic">Basic Pass Legends Fest</option>
+                        <option value="full">Full Pass Legends Fest</option>
+                    </select><br>
                 </div>
+                <div>
+                    <label for="cantidad">Cantidad:</label>
+                    <input id="cantidad" type="number" value="1" min="0" max="10">
+                </div>
+                <div>
+                    <p>Código de descuento: <input type="text" id="descuentoInput" name="texto"></p>
+                </div>
+                <div class="wrap">
+                    <button id="comprar" style="text-align:center" class="buttonComprar" onclick="totalCompra()">Calcular</button>
+                </div>
+                <!--Total-->
+                <div>
+                    <label for="city">Total:<p id="total"></p></label>
+                </div>
+            </div>
         </div>
-                
-        <!--Código y resumen-->
-                <div id="resumen" class="resumen">
-                    <div class="resumen-grid">
-                        <div>
-                            <p>Código de descuento: <input type="text" name="texto"></p>
-                        </div>
-                        <div>
-                            <p>Resumen:</p>
-                        </div>
-                    </div>
+        <!--Resumen y boton Comprar ahora-->
+        <div id="resumen" class="resumen">
+            <div class="resumen-grid">
+                <div>
+                    <p id="resumen"><b>Resumen:</b></p>
+                    <p id="resumenCompra"></p>
                 </div>
-                         
-        <!--Botón comprar ahora-->
-                <div id="botonComprar" class="botonComprar">
-                        <div>
-                            <div class="wrap">
-                                <button class="button">Comprar ahora</button>
-                            </div>
-                        </div>
+                <div class="wrap">
+                    <a href="./compra.html">
+                        <button id="comprarAhora" class="buttonComprarAhora" onclick="">Comprar ahora</button>
+                    </a>
                 </div>
-
+            </div>
+        </div>
         <!--Footer-->
         <footer>
             <p>Terminos y condiciones</p>
@@ -79,8 +79,8 @@
             <h2 style="font-family: 'League Gothic', sans-serif; letter-spacing: 3px; font-size: 52px; margin-top: 5px">
                 Legends Fest</h2>
         </footer>
-    
     </main>
     <script src="./js/comprarBoletas.js"></script>
 </body>
+
 </html>

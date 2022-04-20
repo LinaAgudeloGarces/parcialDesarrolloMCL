@@ -72,11 +72,12 @@
   }
 
 .artist_container {
+    margin: auto;
     padding-left: 25px;
     padding-right: 25px;
     margin-top: 100px;
     margin-bottom: 100px;
-    width: 100%;
+    width: 90%;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-column-gap: 50px;
@@ -86,7 +87,7 @@
     display: grid;
     border:rgb(0, 0, 0) solid 2px;
     justify-self: center;
-    grid-template-columns: 2fr 3fr;
+    grid-template-columns: 1fr 2fr;
     grid-column-gap: 20px;
     width: 95%;
 }

@@ -115,14 +115,14 @@ a {
 }
 
 #divLogin{
-    width: 40vh;
+    width: 50vh;
     height: 40vh;
     background-color: aliceblue;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-    padding: 50px;
+    padding: 40px;
 }
 
 #divUsCon{
@@ -130,12 +130,54 @@ a {
   flex-direction: column;
   height: 10vh;
   justify-content: space-around;
+  width: 40vh;
+  align-items: center;
+  
 }
 
 #divForm{
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  width: 100%;
+  align-items: center;
+}
+
+form{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+
+#divContra{
+  display: flex;
+  width: 100%;
+  justify-content: right;
+  align-items: center;
+  margin-left: 0px;
+}
+
+#span{
+    text-transform: uppercase;
+    cursor: pointer;
+    color: #9d9d9d;
+    font-family: 'Fredoka', sans-serif;
+    position: absolute;
+}
+
+#span:hover {
+  background: rgb(216, 216, 216);
+  color: rgb(0, 0, 0);
+}
+
+.campo{
+  width: 100%;
+  height: 2.5vh;
+  padding: 0px;
+  border-color: aliceblue;
 }
 
 h1 {
@@ -249,17 +291,6 @@ card p {
 
 }
 
-#divContra{
-  display: flex;
-}
-
-#span{
-    text-transform: uppercase;
-    cursor: pointer;
-    background-color: #cccccc;
-    color: #000000;
-}
-
 .dorso p {
   font-size: 0.65em;
 }
@@ -307,10 +338,7 @@ UL.col3 LI {
   width: 30vh;
 }
 
-.campo{
-  width: 30vh;
-  height: 2.5vh;
-}
+
 
 
 .button:hover {

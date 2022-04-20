@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Legends Fest 2022</title>
+  <!--Fuentes-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400&family=League+Gothic&family=Russo+One&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="./css/panel.css">
+</head>
+
+<body>
+  <header>
+    <div class="logo">
+        <h1>Legends Fest</h1>
+    </div>
+  </header>
+
+  <main>
+      <div class="container-artistas">
+        <div style="text-align: right;">
+            <h3 style="font-family: 'Fredoka', sans-serif;">Artistas</h3>
+            <img id="img-artista" width="250px" height="250px" style="border: black solid 2px;" src="https://skillz4kidzmartialarts.com/wp-content/uploads/2017/04/default-image-620x600.jpg" alt="">
+            <div class="input-container">
+              <input onchange="recargarImagen()" style="width: 252px; margin-top: 10px;" class="input-box" type="text" id="link-img" name="link-img" placeholder="Link de Imagen">
+          </div>
+            <div>
+                <!--<button class="btn-artista">Seleccionar imagen</button>-->
+            </div>
+        </div>
+        <div style="padding-top: 35px;">
+            <div class="input-container">
+                <select id="picker-artista" class="input-box" name="artistas" id="artistas" placeholder="Nuevo Artista" onchange="recargarFormulario()">
+                    <option selected="selected" value="new">Nuevo Artista</option>
+                </select>
+            </div>
+            <div class="input-container">
+                <input class="input-box" type="text" id="nombre-artista" name="nombre-artista" placeholder="Nombre Artista">
+            </div>
+            <div class="input-container">
+                <textarea class="input-box" id="area-descripcion" name="nombre-descripcion" rows="4" cols="50" placeholder="Descripción"></textarea>
+            </div>
+            <div class="input-container">
+                <input class="input-box" type="text" id="spotify-artista" name="spotify-artista" placeholder="Link a lista de Spotify">
+            </div>
+            <div>
+              <button id="btn-guardar" onclick="actualizarArtista()">Guardar cambios</button>
+              <button id="btn-eliminar" onclick="eliminarArtista()">Eliminar artista</button>
+            </div>
+        </div>
+      </div>
+
+      <div class="container-galeria">
+        <div style="text-align: right;">
+            <h3 style="font-family: 'Fredoka', sans-serif;">Galería</h3>
+            <img id="img-galeria" width="250px" height="250px" style="border: black solid 2px;" src="https://skillz4kidzmartialarts.com/wp-content/uploads/2017/04/default-image-620x600.jpg" alt="">
+            <div class="input-container">
+              <input onchange="recargarImagenGaleria()" style="width: 252px; margin-top: 10px;" class="input-box" type="text" id="link-img-galeria" name="link-img-galeria" placeholder="Link de Imagen">
+          </div>
+            <div>
+                <!--<button class="btn-artista">Seleccionar imagen</button>-->
+            </div>
+        </div>
+        <div style="padding-top: 35px;">
+            <div class="input-container">
+                <select id="picker-galeria" class="input-box" name="galeria"placeholder="Nueva Foto" onchange="recargarFormularioGaleria()">
+                    <option selected="selected" value="new">Nueva Foto</option>
+                </select>
+            </div>
+            <div class="input-container">
+                <input class="input-box" type="text" id="descripcion-galeria" name="descripcion-galeria" placeholder="Descripción (Max 45 Carácteres)">
+            </div>
+            <div>
+              <button id="btn-guardar" onclick="actualizarGaleria()">Guardar cambios</button>
+              <button id="btn-eliminar" onclick="eliminarGaleria()">Eliminar Foto</button>
+            </div>
+        </div>
+      </div>
+        
+      <!--Footer-->
+      <footer>
+        <p>Terminos y condiciones</p>
+        <p>Copyright&copy; Legends Fest - 2022
+        <p>
+        <h2 style="font-family: 'League Gothic', sans-serif; letter-spacing: 3px; font-size: 52px; margin-top: 5px">
+          Legends Fest</h2>
+      </footer>
+  </main>
+</body>
+
+<script src="./js/listaArtistas.js"></script>
+<script src="./js/fotosGaleria.js"></script>
+<script src="./js/panel.js"></script>
+
+</html>

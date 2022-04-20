@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Legends Fest 2022</title>
+  <!--Fuentes-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400&family=League+Gothic&family=Russo+One&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="./css/panelIngreso.css">
+</head>
+
+<body>
+  <header>
+    <div class="header-grid">
+      <div class="logo">
+        <a href="#hero">
+          <h1>Legends Fest</h1>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!--Fondo-->
+    <div id="programacion" class="programacion">
+      <div class="grid-programacion">
+          <div id="divLogin">
+              <h3>Ingreso Administradores             
+              </h3>
+                <div id="divForm">
+                <!--Formulario-->
+                <form>
+                  <!--Campo para el usuario-->
+                  <div id="divUsCon">
+                  <input type="text" id="name" name="name" class="campo" required minlength="1" maxlength="15" size="30" placeholder="Usuario" required> 
+                  
+                  <div id="divContra">
+                    <!--Campo para la contraseña-->
+                    <input type="password" id="contra" name="contra" class="campo" required minlength="1" maxlength="12" size="30" placeholder="Contraseña" required> 
+                    <!--Para que la muestre-->
+                    <span id="span">Mostrar</span>
+                 </div>
+                  </div>
+                  <!--Ingresar-->
+                 <input id="boton" type="submit" class="button" value="Iniciar sesión">
+                </form>
+              </div>
+              
+          </div>
+        </div>
+      </div>
+    
+      <!--Footer-->
+      <footer>
+        <p>Terminos y condiciones</p>
+        <p>Copyright&copy; Legends Fest - 2022
+        <p>
+        <h2 style="font-family: 'League Gothic', sans-serif; letter-spacing: 3px; font-size: 52px; margin-top: 5px">
+          Legends Fest</h2>
+      </footer>
+
+      <!--Script-->
+      <script src="./js/ingreso.js"></script>
+  </main>
+</body>
+
+</html>

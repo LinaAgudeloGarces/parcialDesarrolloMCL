@@ -18,13 +18,38 @@ header {
     z-index: 1;
 }
 
-a {
-    text-decoration: none;
+.btn-tickets {
+    font-family: 'Fredoka', sans-serif;
+    width: 20vh;
+    text-align: center;
+    align-items: center;
+    background-color: rgb(125, 14, 230);
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 15px;
+    justify-content: center;
+    display: flex;
+    height: 4vh;
+
+  }
+  
+  a{
     color: aliceblue;
-}
+    text-decoration: none;
+  }
+  
+  .btn-tickets:hover {
+    background-color: rgb(102, 3, 194);
+    transition: 1s;
+  }
+
 
 .header-grid {
-    display: grid;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
     align-items: center;
 }
 

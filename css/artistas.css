@@ -28,6 +28,7 @@
     display: grid;
     grid-template-columns: 3fr 1fr 1fr 1fr 1fr 1fr 3fr;
     align-items: center;
+    width: 100%;
   }
   
   .header-item {
@@ -70,6 +71,8 @@
     background-color: rgb(102, 3, 194);
     transition: 1s;
   }
+
+  
 
 .artist_container {
     margin: auto;

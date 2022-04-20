@@ -10,7 +10,7 @@ function mostrarArtistas() {
                 <h2 class="artist-name">${artistas[i].nombre}</h2>
                 <p class="artist-description">${artistas[i].descripcion}</p>
                 <a class="btn-spotify" href="${artistas[i].spotify}" target="_blank">Lista en Spotify</a>
-            </div>
+             </div>
         </div>
         `
     }

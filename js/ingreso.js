@@ -30,7 +30,7 @@ function ingresar(){
         //Si el usuario y la contraseña son correctos
         if(usuarioIng===usuario&&contrasenaIng===contrasena){
             //Abre la ventana
-            window.open("../panel.html");
+            window.open("./panel.html");
         }
         //Si no es correcto el usuario
         else if(usuarioIng!=usuario&&contrasenaIng===contrasena){

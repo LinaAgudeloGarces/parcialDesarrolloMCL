@@ -160,7 +160,7 @@ function mostrarCodigo() {
     return html;
   } else {
     //Mostrar mensaje de no ganar cupon
-    return `<h2 id="mensaje">Gracias por participar,una próxima vez será</h2>`;
+    return `<h2 id="mensaje" >Gracias por participar, una próxima vez será</h2>`;
   }
 }
 

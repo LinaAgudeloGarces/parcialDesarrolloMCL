@@ -3,7 +3,7 @@ let artistas = [
         nombre: 'Michael Jackson',
         descripcion: 'Cantante, compositor y bailarín estadounidense. Apodado como el Rey del Pop.',
         spotify: 'https://open.spotify.com/playlist/37i9dQZF1DXaTIN6XNquoW',
-        img: './src/artistas/michael.jpg'
+        img: './src/artistas/michael.jpeg'
     },
     {
         nombre: 'Dua Lipa',
@@ -15,7 +15,7 @@ let artistas = [
         nombre: 'Bad Bunny',
         descripcion: 'Artista de la música urbana, reconocido a nivel mundial.',
         spotify: 'https://open.spotify.com/playlist/37i9dQZF1DX2apWzyECwyZ',
-        img: './src/artistas/bad_bunny.jpg'
+        img: './src/artistas/bad_bunny.jpeg'
     },
     {
         nombre: 'Christian Nodal',
